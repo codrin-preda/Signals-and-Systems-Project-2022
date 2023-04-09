@@ -19,6 +19,7 @@ To use the impuls and step1 functions, simply call them with the desired input p
 [y14,x1] = impuls(0, 10, 0.01, 7);
 y1=(-3)*y11-5*y12-5*y13+5*y14;
 plot(x1,y1), xlabel('time'), ylabel('x1'), grid 
+
 Similarly, to generate three step signals with different delays and combine them, you can use the following code:
 
 [y21,x2] = step1(-16,4,0.01,-14);
@@ -26,6 +27,7 @@ Similarly, to generate three step signals with different delays and combine them
 [y23,x3] = step1(-16,4,0.01,-2);
 y2=3*y21+y22-4*y23;
 plot(x2,y2), xlabel('time'), ylabel('x2')
+
 To convolve two signals generated using the impuls and step1 functions, you can use the conv function in MATLAB. Here is an example code that convolves the y1 and y2 signals:
 
 
